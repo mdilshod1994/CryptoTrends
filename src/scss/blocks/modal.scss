@@ -1,0 +1,152 @@
+.modal {
+	width: calc(100% - 40px);
+	max-width: 535px;
+	padding: 40px;
+	margin: 50px 20px;
+	background: #ffffff;
+	border-radius: 32px;
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 48px;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		color: #3b3a3c;
+	}
+	&__closed {
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+		transition: all 0.3s;
+		&:hover {
+			opacity: 0.6;
+			transition: all 0.3s;
+		}
+	}
+	&__tabs {
+		display: flex;
+		justify-content: space-between;
+		padding: 4px;
+		height: 48px;
+		background-color: #f2f2f3;
+		border-radius: 12px;
+		margin-bottom: 32px;
+	}
+	&__tab {
+		width: calc(50% - 2px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 40px;
+		border-radius: 8px;
+		padding: 8px;
+		font-weight: 700;
+		color: #3b3a3c;
+		cursor: pointer;
+		transition: all 0.3s;
+		&.active,
+		&:hover {
+			background-color: #fff;
+			transition: all 0.3s;
+		}
+	}
+	&__container {
+		position: relative;
+		overflow: hidden;
+	}
+	&__block {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0s;
+		&.active {
+			position: relative;
+			opacity: 1;
+			visibility: visible;
+			transition: all 0.3s;
+		}
+	}
+	&__btn {
+		width: 100%;
+		&[disabled] {
+			color: #aba7ad;
+			background-color: #e8e4ec;
+			&::before {
+				opacity: 0;
+				transition: all 0.3s;
+			}
+		}
+	}
+	.form {
+		&__coll {
+			margin-bottom: 32px;
+		}
+	}
+	.search {
+		width: 100%;
+	}
+}
+.fancybox-bg {
+	background: #0d061e;
+	&.fancybox-bg {
+		opacity: 0.5;
+		backdrop-filter: blur(2px);
+	}
+}
+.fancybox-button {
+	display: none;
+}
+.fancybox-slide--html {
+	padding: 0;
+}
+.air-datepicker-global-container {
+	z-index: 100000;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1340px) {
+}
+@media (max-width: 1279px) {
+}
+@media (max-width: 1189px) {
+}
+@media (max-width: 1010px) {
+	.modal {
+		.search {
+			position: relative;
+			top: 0;
+			right: 0;
+			transform: scaleX(1);
+		}
+	}
+}
+@media (max-width: 760px) {
+}
+@media (max-width: 420px) {
+	.modal {
+		padding: 24px 20px;
+		border-radius: 24px;
+		&__top {
+			margin-bottom: 28px;
+		}
+		&__title {
+			font-size: 22px;
+			line-height: 24px;
+		}
+		&__tabs {
+			margin-bottom: 24px;
+		}
+		.form {
+			&__coll {
+				margin-bottom: 16px;
+			}
+		}
+	}
+}

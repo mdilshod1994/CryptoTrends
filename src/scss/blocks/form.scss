@@ -1,0 +1,162 @@
+.form {
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__coll {
+		display: block;
+		position: relative;
+		width: 100%;
+		&_normal {
+			width: calc(50% - 16px);
+			margin-bottom: 40px;
+		}
+	}
+	&__label {
+		display: flex;
+		position: relative;
+		align-items: center;
+		border: 1px solid #e8e4ec;
+		border-radius: 8px;
+	}
+	&__error {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		color: #d72f0b;
+		margin-top: 4px;
+		display: none;
+	}
+	&__caption {
+		margin-bottom: 4px;
+	}
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__button {
+		padding: 12px 20px 12px 16px;
+		svg {
+			width: 24px;
+			height: 24px;
+			margin-right: 8px;
+		}
+	}
+	&__currency {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		color: #3b3a3c;
+		padding: 6px 10px 2px;
+		background-color: #f2f2f3;
+		border-radius: 4px;
+		margin-left: 8px;
+	}
+	&__password-icon {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		top: calc(50% - 12px);
+		right: 12px;
+		cursor: pointer;
+		svg {
+			& * {
+				transition: all 0.3s;
+			}
+		}
+		&.active {
+			svg {
+				& * {
+					fill: #7737ff;
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+	&__checbox {
+		width: calc(50% - 2px);
+		height: 100%;
+		background-color: transparent;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: all 0.3s;
+		input {
+			display: none;
+		}
+		input[type="checkbox"]:checked + .form__checbox-caption,
+		input[type="radio"]:checked + .form__checbox-caption {
+			background-color: #ffffff;
+			transition: all 0.3s;
+		}
+		&-items {
+			display: flex;
+			justify-content: space-between;
+			padding: 4px;
+			width: 100%;
+			height: 48px;
+			background-color: #f2f2f3;
+			border-radius: 12px;
+			margin-bottom: 48px;
+		}
+		&-caption {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			background-color: transparent;
+			border-radius: 8px;
+			transition: all 0.3s;
+		}
+	}
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1340px) {
+}
+@media (max-width: 1279px) {
+}
+@media (max-width: 1189px) {
+	.form {
+		&__label {
+			&_normal {
+				width: 100%;
+				margin-bottom: 35px;
+			}
+		}
+		&__coll {
+			&_normal {
+				width: 100%;
+				margin-bottom: 32px;
+			}
+		}
+	}
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+	.form {
+		&__buttons {
+			justify-content: center;
+			flex-wrap: wrap;
+			padding-top: 4px;
+		}
+		&__btn {
+			width: 100%;
+		}
+		&__button {
+			width: 100%;
+			margin-top: 24px;
+		}
+	}
+}
+@media (max-width: 420px) {
+	.form {
+		&__checbox {
+			&-items {
+				margin-top: 6px;
+				margin-bottom: 24px;
+			}
+		}
+	}
+}

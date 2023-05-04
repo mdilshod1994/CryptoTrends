@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:image" content="">
+	<meta property="og:image:width" content="250">
+	<meta property="og:image:height" content="250">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<main class="main">
+
+<header class="header  ">
+	<div class="wrapper">
+		<div class="header__top flex">
+			<div class="header-applications">
+				<div class="header-applications__scroll dragscroll">
+					<div class="header-applications__items">
+						<div class="header-applications__item">
+							<div class="header-applications__caption">Cryptos:</div>
+							<div class="header-applications__value">22 828</div>
+						</div>
+						<div class="header-applications__item">
+							<div class="header-applications__caption">Exchanges:</div>
+							<div class="header-applications__value">22 828</div>
+						</div>
+						<div class="header-applications__item">
+							<div class="header-applications__caption"> Market Cap:</div>
+							<div class="header-applications__value">$994,322,025,565</div>
+						</div>
+						<div class="header-applications__item">
+							<div class="header-applications__caption">24h Vol:</div>
+							<div class="header-applications__value">$44,415,780,804</div>
+						</div>
+						<div class="header-applications__item">
+							<div class="header-applications__caption">Dominance:</div>
+							<div class="header-applications__value">BTC: 42.2% ETH: 18.9%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__top-last flex">
+				<div class="currency">
+					<div class="currency__top">
+						<div class="currency__caption">USD</div>
+						<div class="currency__arrow">
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M3.16837 5.09212L5.59628 7.81262C5.81925 8.06246 6.18075 8.06246 6.40372 7.81262L8.83163 5.09212C9.1913 4.6891 8.93657 4 8.42791 4H3.57209C3.06343 4 2.8087 4.6891 3.16837 5.09212Z"
+									fill="#3B3A3C" />
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="header__buttons flex">
+					<button class="header__btn btn callback--js" data-modal="2">
+						<span>Sign up</span>
+					</button>
+					<button class="header__btn btn btn_item callback--js" data-modal="1">
+						<span>Log in</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom flex">
+			<div class="header__first flex">
+				<a href="#" class="logo">
+					<img src="img/icons/logo.svg" alt="">
+				</a>
+				<div class="header__container">
+					<div class="header__closed">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7 7L17 17" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+							<path d="M17 7L7 17" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+						</svg>
+					</div>
+					<nav class="header__menu">
+						<ul>
+							<li>
+								<a href="#">Exchanges</a>
+							</li>
+							<li>
+								<a href="#">Coins</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">About</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__container-box">
+						<div class="currency">
+							<div class="currency__top">
+								<div class="currency__caption">USD</div>
+								<div class="currency__arrow">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.16837 5.09212L5.59628 7.81262C5.81925 8.06246 6.18075 8.06246 6.40372 7.81262L8.83163 5.09212C9.1913 4.6891 8.93657 4 8.42791 4H3.57209C3.06343 4 2.8087 4.6891 3.16837 5.09212Z"
+											fill="#3B3A3C" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="header__buttons flex">
+							<button class="header__btn btn callback--js" data-modal="2">
+								<span>Sign up</span>
+							</button>
+							<button class="header__btn btn btn_item callback--js" data-modal="1">
+								<span>Log in</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__last">
+				<form action="#" class="search">
+					<input type="text" class="search__field field" placeholder="Search">
+					<button class="search__btn">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="9.80492" cy="9.80589" r="7.49047" stroke="white" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M15.0156 15.4043L17.9523 18.3334" stroke="white" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</form>
+				<div class="header__last-buttons">
+					<button class="header__search">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="11.7659" cy="11.7669" r="8.98856" stroke="white" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M18.0176 18.4854L21.5416 22.0002" stroke="white" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+					<button class="header__burger">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4 6H20" stroke="#3B3A3C" stroke-width="1.5" stroke-linecap="round" />
+							<path d="M4 12H20" stroke="#3B3A3C" stroke-width="1.5" stroke-linecap="round" />
+							<path d="M4 18H20" stroke="#3B3A3C" stroke-width="1.5" stroke-linecap="round" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="profile">
+	<div class="wrapper">
+		<div class="profile__top">
+			<div class="profile__title title">Profile</div>
+			<div class="profile__nav">
+				<a href="#" class="profile__nav-btn active">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect class="bg" x="2.66602" y="2.66699" width="26.6667" height="26.6667" rx="4"
+							stroke="#ABA7AD" stroke-width="1.5" />
+						<path class="bg-gray"
+							d="M8.66602 21.9886C8.66602 24.6451 12.0232 25.3337 15.9993 25.3337C19.9544 25.3337 23.3327 24.6695 23.3327 22.012C23.3327 19.3555 19.9764 18.667 15.9993 18.667C12.0443 18.667 8.66602 19.3311 8.66602 21.9886Z"
+							stroke="#ABA7AD" stroke-width="1.5" />
+						<path class="bg-gray"
+							d="M16.0007 15.3333C18.5915 15.3333 20.6673 13.2564 20.6673 10.6662C20.6673 8.07603 18.5915 6 16.0007 6C13.4107 6 11.334 8.07603 11.334 10.6662C11.334 13.2564 13.4107 15.3333 16.0007 15.3333"
+							stroke="#ABA7AD" stroke-width="1.5" />
+					</svg>
+				</a>
+				<a href="#" class="profile__nav-btn">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.9928 22.2352V18.8525" stroke="#ABA7AD" stroke-width="1.5" stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M24.2527 7.10645C26.506 7.10645 28.3193 8.93311 28.3193 11.1864V15.7731C25.0393 17.6931 20.706 18.8531 15.986 18.8531C11.266 18.8531 6.94602 17.6931 3.66602 15.7731V11.1731C3.66602 8.91978 5.49268 7.10645 7.74602 7.10645H24.2527Z"
+							stroke="#ABA7AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+						<path
+							d="M20.6595 7.10068V6.61268C20.6595 4.98602 19.3395 3.66602 17.7128 3.66602H14.2728C12.6462 3.66602 11.3262 4.98602 11.3262 6.61268V7.10068"
+							stroke="#ABA7AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+						<path
+							d="M3.69922 20.6436L3.95122 23.9889C4.12189 26.2436 6.00055 27.9862 8.26055 27.9862H23.7259C25.9859 27.9862 27.8646 26.2436 28.0352 23.9889L28.2872 20.6436"
+							stroke="#ABA7AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+				<a href="#" class="profile__nav-btn">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M16.653 11.0914L17.7368 13.3825C17.8424 13.6067 18.0465 13.7628 18.284 13.7996L20.7067 14.1689C21.3067 14.2608 21.5442 15.0287 21.1114 15.4679L19.359 17.25C19.1866 17.4246 19.1092 17.6763 19.1479 17.9243L19.5613 20.4414C19.6634 21.0643 19.0388 21.5383 18.5039 21.2443L16.3381 20.0556C16.1252 19.938 15.8718 19.938 15.6589 20.0556L13.4949 21.2443C12.9582 21.5383 12.3336 21.0643 12.4357 20.4414L12.8492 17.9243C12.8896 17.6763 12.8104 17.4246 12.638 17.25L10.8874 15.4679C10.4546 15.0287 10.6921 14.2608 11.2903 14.1689L13.713 13.7996C13.9505 13.7628 14.1564 13.6067 14.262 13.3825L15.344 11.0914C15.6114 10.5255 16.3856 10.5255 16.653 11.0914Z"
+							stroke="#ABA7AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+						<path
+							d="M28.5814 9.47352V9.4738L28.5827 13.0433C28.5827 13.0433 28.5827 13.0434 28.5827 13.0434C28.5827 13.0435 28.5827 13.0435 28.5827 13.0435C28.5826 13.1053 28.557 13.1669 28.5128 13.2107C28.4656 13.2574 28.4022 13.2841 28.3327 13.2841C26.8303 13.2841 25.5973 14.496 25.5973 16.0013C25.5973 17.5067 26.8303 18.7185 28.3327 18.7185C28.477 18.7185 28.5827 18.8331 28.5827 18.9594V22.5278C28.5827 25.1246 26.4476 27.25 23.81 27.25H8.19002C5.55215 27.25 3.41602 25.1244 3.41602 22.5278V18.9594C3.41602 18.8331 3.52172 18.7185 3.66602 18.7185C5.16939 18.7185 6.40268 17.507 6.40268 16.0013C6.40268 14.4812 5.16146 13.3991 3.66602 13.3991C3.59836 13.3991 3.53476 13.3727 3.48724 13.3257C3.44037 13.2792 3.41607 13.2183 3.41602 13.1584C3.41602 13.1583 3.41602 13.1583 3.41602 13.1582L3.41868 9.47407V9.47352C3.41868 6.87647 5.55396 4.75 8.19135 4.75H23.8074C26.445 4.75 28.5814 6.87671 28.5814 9.47352Z"
+							stroke="#ABA7AD" stroke-width="1.5" />
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="profile__body">
+			<div class="profile__sidebar">
+				<a href="#" class="profile__sidebar-btn active">
+					<div class="profile__sidebar-icon">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect class="bg" x="2.66602" y="2.66699" width="26.6667" height="26.6667" rx="4"
+								stroke="#ABA7AD" stroke-width="1.5" />
+							<path class="bg-gray"
+								d="M8.66602 21.9886C8.66602 24.6451 12.0232 25.3337 15.9993 25.3337C19.9544 25.3337 23.3327 24.6695 23.3327 22.012C23.3327 19.3555 19.9764 18.667 15.9993 18.667C12.0443 18.667 8.66602 19.3311 8.66602 21.9886Z"
+								stroke="#ABA7AD" stroke-width="1.5" />
+							<path class="bg-gray"
+								d="M16.0007 15.3333C18.5915 15.3333 20.6673 13.2564 20.6673 10.6662C20.6673 8.07603 18.5915 6 16.0007 6C13.4107 6 11.334 8.07603 11.334 10.6662C11.334 13.2564 13.4107 15.3333 16.0007 15.3333"
+								stroke="#ABA7AD" stroke-width="1.5" />
+						</svg>
+					</div>
+					<div class="profile__sidebar-caption">Profile</div>
+				</a>
+				<a href="#" class="profile__sidebar-btn">
+					<div class="profile__sidebar-icon">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="bg-gray" d="M15.9928 22.2352V18.8525" stroke="#ABA7AD" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round" />
+							<path class="bg" fill-rule="evenodd" clip-rule="evenodd"
+								d="M24.2527 7.10645C26.506 7.10645 28.3193 8.93311 28.3193 11.1864V15.7731C25.0393 17.6931 20.706 18.8531 15.986 18.8531C11.266 18.8531 6.94602 17.6931 3.66602 15.7731V11.1731C3.66602 8.91978 5.49268 7.10645 7.74602 7.10645H24.2527Z"
+								stroke="#ABA7AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							<path class="bg-stroke"
+								d="M20.6595 7.10068V6.61268C20.6595 4.98602 19.3395 3.66602 17.7128 3.66602H14.2728C12.6462 3.66602 11.3262 4.98602 11.3262 6.61268V7.10068"
+								stroke="#ABA7AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							<path class="bg"
+								d="M3.69922 20.6436L3.95122 23.9889C4.12189 26.2436 6.00055 27.9862 8.26055 27.9862H23.7259C25.9859 27.9862 27.8646 26.2436 28.0352 23.9889L28.2872 20.6436"
+								stroke="#ABA7AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+					<div class="profile__sidebar-caption">Portfolio</div>
+				</a>
+				<a href="#" class="profile__sidebar-btn">
+					<div class="profile__sidebar-icon">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M16.653 11.0914L17.7368 13.3825C17.8424 13.6067 18.0465 13.7628 18.284 13.7996L20.7067 14.1689C21.3067 14.2608 21.5442 15.0287 21.1114 15.4679L19.359 17.25C19.1866 17.4246 19.1092 17.6763 19.1479 17.9243L19.5613 20.4414C19.6634 21.0643 19.0388 21.5383 18.5039 21.2443L16.3381 20.0556C16.1252 19.938 15.8718 19.938 15.6589 20.0556L13.4949 21.2443C12.9582 21.5383 12.3336 21.0643 12.4357 20.4414L12.8492 17.9243C12.8896 17.6763 12.8104 17.4246 12.638 17.25L10.8874 15.4679C10.4546 15.0287 10.6921 14.2608 11.2903 14.1689L13.713 13.7996C13.9505 13.7628 14.1564 13.6067 14.262 13.3825L15.344 11.0914C15.6114 10.5255 16.3856 10.5255 16.653 11.0914Z"
+								stroke="#ABA7AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M28.5814 9.47352V9.4738L28.5827 13.0433C28.5827 13.0433 28.5827 13.0434 28.5827 13.0434C28.5827 13.0435 28.5827 13.0435 28.5827 13.0435C28.5826 13.1053 28.557 13.1669 28.5128 13.2107C28.4656 13.2574 28.4022 13.2841 28.3327 13.2841C26.8303 13.2841 25.5973 14.496 25.5973 16.0013C25.5973 17.5067 26.8303 18.7185 28.3327 18.7185C28.477 18.7185 28.5827 18.8331 28.5827 18.9594V22.5278C28.5827 25.1246 26.4476 27.25 23.81 27.25H8.19002C5.55215 27.25 3.41602 25.1244 3.41602 22.5278V18.9594C3.41602 18.8331 3.52172 18.7185 3.66602 18.7185C5.16939 18.7185 6.40268 17.507 6.40268 16.0013C6.40268 14.4812 5.16146 13.3991 3.66602 13.3991C3.59836 13.3991 3.53476 13.3727 3.48724 13.3257C3.44037 13.2792 3.41607 13.2183 3.41602 13.1584C3.41602 13.1583 3.41602 13.1583 3.41602 13.1582L3.41868 9.47407V9.47352C3.41868 6.87647 5.55396 4.75 8.19135 4.75H23.8074C26.445 4.75 28.5814 6.87671 28.5814 9.47352Z"
+								stroke="#ABA7AD" stroke-width="1.5" />
+						</svg>
+					</div>
+					<div class="profile__sidebar-caption">Favorites</div>
+				</a>
+			</div>
+			<div class="profile__wrap">
+				<div class="profile-general">
+					<div class="profile__caption">General</div>
+					<div class="profile-general__body">
+						<div class="profile-general__user">
+							<div class="profile-general__avatar">
+								<img src="img/profile/avatar.svg" alt="">
+							</div>
+							<div class="profile-general__box">
+								<div class="profile-general__name profile__caption">Emma Johnson</div>
+								<div class="profile-general__items">
+									<div class="profile-general__item">
+										<div class="profile-general__item-caption">Login:</div>
+										<div class="profile-general__item-value">CryptoGirl</div>
+									</div>
+									<div class="profile-general__item">
+										<div class="profile-general__email">CryptoGirl@gmail.com</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<form action="#" class="form">
+							<div class="form__body">
+								<div class="form__coll form__coll_normal">
+									<div class="form__caption">Name:</div>
+									<label class="form__label">
+										<input type="text" value="Emma" class="form__field field">
+									</label>
+								</div>
+								<div class="form__coll form__coll_normal">
+									<div class="form__caption">Surename:</div>
+									<label class="form__label">
+										<input type="text" value="Johnson" class="form__field field">
+									</label>
+								</div>
+								<div class="form__coll form__coll_normal">
+									<div class="form__caption">Login:</div>
+									<label class="form__label">
+										<input type="text" value="CryptoGirl" class="form__field field">
+									</label>
+								</div>
+								<div class="form__coll form__coll_normal">
+									<div class="form__caption">E-mail:</div>
+									<label class="form__label">
+										<input type="text" value="CryptoGirl@gmail.com" class="form__field field">
+									</label>
+								</div>
+							</div>
+							<div class="form__buttons">
+								<button class="form__btn btn btn_item">
+									<span>Change password</span>
+								</button>
+								<button class="form__button btn">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z"
+											fill="#3B3A3C" />
+									</svg>
+									<span>LogOut</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="profile-notification">
+					<div class="profile__caption">Notification</div>
+					<div class="profile-notification__body">
+						<label class="profile-notification__checbox">
+							<input type="checkbox" name="value" value="active" checked>
+							<div class="profile-notification__box">
+								<div class="profile-notification__block">
+									<div class="profile-notification__caption">Comments</div>
+									<div class="profile-notification__desc">Notify me when somebody respond to my
+										comments</div>
+								</div>
+								<div class="profile-notification__icon">
+									<span></span>
+								</div>
+							</div>
+						</label>
+						<label class="profile-notification__checbox">
+							<input type="checkbox" name="value" value="active">
+							<div class="profile-notification__box">
+								<div class="profile-notification__block">
+									<div class="profile-notification__caption">Tokens price changes</div>
+									<div class="profile-notification__desc">Notify me if the price of tokens in your
+										favorites changes by more than 10% per hour</div>
+								</div>
+								<div class="profile-notification__icon">
+									<span></span>
+								</div>
+							</div>
+						</label>
+						<label class="profile-notification__checbox">
+							<input type="checkbox" name="value" value="active" checked>
+							<div class="profile-notification__box">
+								<div class="profile-notification__block">
+									<div class="profile-notification__caption">Portfolio balance</div>
+									<div class="profile-notification__desc">Notify me if there is a sharp rise or fall
+										of 10% of the aggregate portfolio balance</div>
+								</div>
+								<div class="profile-notification__icon">
+									<span></span>
+								</div>
+							</div>
+						</label>
+						<label class="profile-notification__checbox">
+							<input type="checkbox" name="value" value="active">
+							<div class="profile-notification__box">
+								<div class="profile-notification__block">
+									<div class="profile-notification__caption">Project news</div>
+									<div class="profile-notification__desc">Notify me of news about our project</div>
+								</div>
+								<div class="profile-notification__icon">
+									<span></span>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="callback-modal" class="callback-modal modal" style="display: none;">
+	<div class="modal__body">
+		<div class="modal__top">
+			<div class="modal__title">Autorization</div>
+			<div class="modal__closed flex-center svg-contain" data-fancybox-close>
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7 7L17 17" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+					<path d="M17 7L7 17" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+				</svg>
+			</div>
+		</div>
+		<div class="modal__wrap">
+			<div class="modal__tabs">
+				<div class="modal__tab active" data-modal="1">Log in</div>
+				<div class="modal__tab" data-modal="2">Sign up</div>
+			</div>
+			<div class="modal__container">
+				<div class="modal__block active" data-modal-block="1">
+					<form action="#" class="form">
+						<div class="form__container">
+							<label class="form__label">
+								<div class="form__caption">Email Address:</div>
+								<input type="text" data-error="Wrong passsword" class="form__field field"
+									placeholder="Type here">
+								<div class="form__error">Wrong passsword</div>
+							</label>
+							<label class="form__label">
+								<div class="form__caption">Password: </div>
+								<input type="password" data-error="Wrong passsword" class="form__field field"
+									placeholder="Type here">
+								<div class="form__error">Wrong passsword</div>
+								<div class="form__password-icon">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M8.09756 12C8.09756 14.1333 9.8439 15.8691 12 15.8691C14.1463 15.8691 15.8927 14.1333 15.8927 12C15.8927 9.85697 14.1463 8.12121 12 8.12121C9.8439 8.12121 8.09756 9.85697 8.09756 12ZM17.7366 6.04606C19.4439 7.36485 20.8976 9.29455 21.9415 11.7091C22.0195 11.8933 22.0195 12.1067 21.9415 12.2812C19.8537 17.1103 16.1366 20 12 20H11.9902C7.86341 20 4.14634 17.1103 2.05854 12.2812C1.98049 12.1067 1.98049 11.8933 2.05854 11.7091C4.14634 6.88 7.86341 4 11.9902 4H12C14.0683 4 16.0293 4.71758 17.7366 6.04606ZM12.0012 14.4124C13.3378 14.4124 14.4304 13.3264 14.4304 11.9979C14.4304 10.6597 13.3378 9.57362 12.0012 9.57362C11.8841 9.57362 11.767 9.58332 11.6597 9.60272C11.6207 10.6694 10.7426 11.5227 9.65971 11.5227H9.61093C9.58166 11.6779 9.56215 11.833 9.56215 11.9979C9.56215 13.3264 10.6548 14.4124 12.0012 14.4124Z"
+											fill="#E8E4EC" />
+									</svg>
+								</div>
+							</label>
+						</div>
+						<button class="form__btn modal__btn btn btn_item" disabled>
+							<span>Log In</span>
+						</button>
+					</form>
+				</div>
+				<div class="modal__block" data-modal-block="2">
+					<form action="#" class="form">
+						<div class="form__container">
+							<label class="form__label">
+								<div class="form__caption">Login:</div>
+								<input type="text" data-error="Wrong passsword" class="form__field field"
+									placeholder="Type here">
+								<div class="form__error">Wrong passsword</div>
+							</label>
+							<label class="form__label">
+								<div class="form__caption">E-mail:</div>
+								<input type="text" data-error="Wrong passsword" class="form__field field"
+									placeholder="Type here">
+								<div class="form__error">Wrong passsword</div>
+							</label>
+							<label class="form__label">
+								<div class="form__caption">Password:</div>
+								<input type="password" data-error="Wrong passsword" class="form__field field"
+									placeholder="Type here">
+								<div class="form__error">Wrong passsword</div>
+								<div class="form__password-icon">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M8.09756 12C8.09756 14.1333 9.8439 15.8691 12 15.8691C14.1463 15.8691 15.8927 14.1333 15.8927 12C15.8927 9.85697 14.1463 8.12121 12 8.12121C9.8439 8.12121 8.09756 9.85697 8.09756 12ZM17.7366 6.04606C19.4439 7.36485 20.8976 9.29455 21.9415 11.7091C22.0195 11.8933 22.0195 12.1067 21.9415 12.2812C19.8537 17.1103 16.1366 20 12 20H11.9902C7.86341 20 4.14634 17.1103 2.05854 12.2812C1.98049 12.1067 1.98049 11.8933 2.05854 11.7091C4.14634 6.88 7.86341 4 11.9902 4H12C14.0683 4 16.0293 4.71758 17.7366 6.04606ZM12.0012 14.4124C13.3378 14.4124 14.4304 13.3264 14.4304 11.9979C14.4304 10.6597 13.3378 9.57362 12.0012 9.57362C11.8841 9.57362 11.767 9.58332 11.6597 9.60272C11.6207 10.6694 10.7426 11.5227 9.65971 11.5227H9.61093C9.58166 11.6779 9.56215 11.833 9.56215 11.9979C9.56215 13.3264 10.6548 14.4124 12.0012 14.4124Z"
+											fill="#E8E4EC" />
+									</svg>
+								</div>
+							</label>
+							<label class="form__label">
+								<div class="form__caption">Repeat password:</div>
+								<input type="password" data-error="Wrong passsword" class="form__field field"
+									placeholder="Type here">
+								<div class="form__error">Wrong passsword</div>
+								<div class="form__password-icon">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M8.09756 12C8.09756 14.1333 9.8439 15.8691 12 15.8691C14.1463 15.8691 15.8927 14.1333 15.8927 12C15.8927 9.85697 14.1463 8.12121 12 8.12121C9.8439 8.12121 8.09756 9.85697 8.09756 12ZM17.7366 6.04606C19.4439 7.36485 20.8976 9.29455 21.9415 11.7091C22.0195 11.8933 22.0195 12.1067 21.9415 12.2812C19.8537 17.1103 16.1366 20 12 20H11.9902C7.86341 20 4.14634 17.1103 2.05854 12.2812C1.98049 12.1067 1.98049 11.8933 2.05854 11.7091C4.14634 6.88 7.86341 4 11.9902 4H12C14.0683 4 16.0293 4.71758 17.7366 6.04606ZM12.0012 14.4124C13.3378 14.4124 14.4304 13.3264 14.4304 11.9979C14.4304 10.6597 13.3378 9.57362 12.0012 9.57362C11.8841 9.57362 11.767 9.58332 11.6597 9.60272C11.6207 10.6694 10.7426 11.5227 9.65971 11.5227H9.61093C9.58166 11.6779 9.56215 11.833 9.56215 11.9979C9.56215 13.3264 10.6548 14.4124 12.0012 14.4124Z"
+											fill="#E8E4EC" />
+									</svg>
+								</div>
+							</label>
+						</div>
+						<button class="form__btn modal__btn btn btn_item" disabled>
+							<span>Log In</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- end callback-modal -->
+
+<div id="transaction-modal" class="transaction-modal modal" style="display: none;">
+	<div class="modal__body">
+		<div class="modal__top">
+			<div class="modal__title">Add a transaction</div>
+			<div class="modal__closed flex-center svg-contain" data-fancybox-close>
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7 7L17 17" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+					<path d="M17 7L7 17" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+				</svg>
+			</div>
+		</div>
+		<div class="modal__wrap">
+			<div class="modal__container">
+				<form action="#" class="form">
+					<div class="form__body">
+						<div class="form__coll">
+							<div class="form__caption">Name:</div>
+							<div class="search">
+								<input type="text" class="search__field field" placeholder="Search">
+								<button class="search__btn">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="9.80492" cy="9.80589" r="7.49047" stroke="white" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M15.0156 15.4043L17.9523 18.3334" stroke="white" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="form__coll form__coll_normal">
+							<div class="form__caption">Date</div>
+							<label class="form__label">
+								<input type="text" data-error="Wrong passsword" class="form__field field form-data"
+									value="2023-02-11">
+							</label>
+							<div class="form__error">Wrong password</div>
+						</div>
+						<div class="form__coll form__coll_normal">
+							<div class="form__caption">Time:</div>
+							<label class="form__label">
+								<input type="text" data-error="Wrong passsword" class="form__field field" value="00:00">
+							</label>
+							<div class="form__error">Wrong password</div>
+						</div>
+						<div class="form__coll form__coll_normal">
+							<div class="form__caption">Count:</div>
+							<label class="form__label">
+								<input type="text" data-error="Wrong passsword" class="form__field field" value="5">
+							</label>
+							<div class="form__error">Wrong password</div>
+						</div>
+						<div class="form__coll form__coll_normal">
+							<div class="form__caption">Price</div>
+							<label class="form__label">
+								<div class="form__currency">USD</div>
+								<input type="text" data-error="Wrong passsword" class="form__field field" value="100">
+							</label>
+							<div class="form__error">Wrong password</div>
+						</div>
+						<div class="form__checbox-items">
+							<label class="form__checbox">
+								<input type="radio" name="value" value="active" checked>
+								<div class="form__checbox-caption">Buy</div>
+							</label>
+							<label class="form__checbox">
+								<input type="radio" name="value" value="active">
+								<div class="form__checbox-caption">Sale</div>
+							</label>
+						</div>
+					</div>
+					<button class="form__btn modal__btn btn btn_item" disabled>
+						<span>Add a transaction</span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div><!-- end transaction-modal -->
+
+<div id="quiz-modal" class="quiz-modal modal" style="display: none;">
+	<div class="modal__body">
+		<div class="modal__top">
+			<div class="modal__title">Have you ever bought or invested in cryptocurrencies?</div>
+		</div>
+		<div class="modal__wrap">
+			<form action="#" class="quiz-modal__form">
+				<div class="quiz-modal__wrap">
+					<div class="quiz-modal__box">
+						<label class="quiz-modal__checbox">
+							<input type="radio" name="value" value="active" checked>
+							<div class="quiz-modal__checbox-box">
+								<div class="quiz-modal__checbox-icon">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M4 0C1.79086 0 0 1.79086 0 4V16C0 18.2091 1.79086 20 4 20H16C18.2091 20 20 18.2091 20 16V4C20 1.79086 18.2091 0 16 0H4ZM15.7071 7.70711C16.0976 7.31658 16.0976 6.68342 15.7071 6.29289C15.3166 5.90237 14.6834 5.90237 14.2929 6.29289L9 11.5858L6.70711 9.29289C6.31658 8.90237 5.68342 8.90237 5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071L8.29289 13.7071C8.68342 14.0976 9.31658 14.0976 9.70711 13.7071L15.7071 7.70711Z"
+											fill="#7737FF" />
+									</svg>
+								</div>
+								<div class="quiz-modal__checbox-caption">Yes, I currently own cryptocurrencies.</div>
+							</div>
+						</label>
+						<div class="quiz-modal__info">
+							<div class="quiz-modal__info-box">
+								<div class="quiz-modal__info-value">80%</div>
+								<div class="quiz-modal__info-line">
+									<span style="width: 80%;"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="quiz-modal__box">
+						<label class="quiz-modal__checbox">
+							<input type="radio" name="value" value="active">
+							<div class="quiz-modal__checbox-box">
+								<div class="quiz-modal__checbox-icon">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M4 0C1.79086 0 0 1.79086 0 4V16C0 18.2091 1.79086 20 4 20H16C18.2091 20 20 18.2091 20 16V4C20 1.79086 18.2091 0 16 0H4ZM15.7071 7.70711C16.0976 7.31658 16.0976 6.68342 15.7071 6.29289C15.3166 5.90237 14.6834 5.90237 14.2929 6.29289L9 11.5858L6.70711 9.29289C6.31658 8.90237 5.68342 8.90237 5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071L8.29289 13.7071C8.68342 14.0976 9.31658 14.0976 9.70711 13.7071L15.7071 7.70711Z"
+											fill="#7737FF" />
+									</svg>
+								</div>
+								<div class="quiz-modal__checbox-caption">Yes, I have invested in cryptocurrencies in the
+									past but no longer hold any.</div>
+							</div>
+						</label>
+						<div class="quiz-modal__info">
+							<div class="quiz-modal__info-box">
+								<div class="quiz-modal__info-value">50%</div>
+								<div class="quiz-modal__info-line">
+									<span style="width: 50%;"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="quiz-modal__box">
+						<label class="quiz-modal__checbox">
+							<input type="radio" name="value" value="active">
+							<div class="quiz-modal__checbox-box">
+								<div class="quiz-modal__checbox-icon">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M4 0C1.79086 0 0 1.79086 0 4V16C0 18.2091 1.79086 20 4 20H16C18.2091 20 20 18.2091 20 16V4C20 1.79086 18.2091 0 16 0H4ZM15.7071 7.70711C16.0976 7.31658 16.0976 6.68342 15.7071 6.29289C15.3166 5.90237 14.6834 5.90237 14.2929 6.29289L9 11.5858L6.70711 9.29289C6.31658 8.90237 5.68342 8.90237 5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071L8.29289 13.7071C8.68342 14.0976 9.31658 14.0976 9.70711 13.7071L15.7071 7.70711Z"
+											fill="#7737FF" />
+									</svg>
+								</div>
+								<div class="quiz-modal__checbox-caption">No, but I'm interested in investing in
+									cryptocurrencies in the future.</div>
+							</div>
+						</label>
+						<div class="quiz-modal__info">
+							<div class="quiz-modal__info-box">
+								<div class="quiz-modal__info-value">1%</div>
+								<div class="quiz-modal__info-line">
+									<span style="width: 1%;"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="quiz-modal__box">
+						<label class="quiz-modal__checbox">
+							<input type="radio" name="value" value="active">
+							<div class="quiz-modal__checbox-box">
+								<div class="quiz-modal__checbox-icon">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M4 0C1.79086 0 0 1.79086 0 4V16C0 18.2091 1.79086 20 4 20H16C18.2091 20 20 18.2091 20 16V4C20 1.79086 18.2091 0 16 0H4ZM15.7071 7.70711C16.0976 7.31658 16.0976 6.68342 15.7071 6.29289C15.3166 5.90237 14.6834 5.90237 14.2929 6.29289L9 11.5858L6.70711 9.29289C6.31658 8.90237 5.68342 8.90237 5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071L8.29289 13.7071C8.68342 14.0976 9.31658 14.0976 9.70711 13.7071L15.7071 7.70711Z"
+											fill="#7737FF" />
+									</svg>
+								</div>
+								<div class="quiz-modal__checbox-caption">No, I'm not interested in cryptocurrencies.
+								</div>
+							</div>
+						</label>
+						<div class="quiz-modal__info">
+							<div class="quiz-modal__info-box">
+								<div class="quiz-modal__info-value">9%</div>
+								<div class="quiz-modal__info-line">
+									<span style="width: 9%;"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="quiz-modal__buttons">
+					<button class="quiz-modal__btn btn btn_item quiz-modal--js">
+						<span>Send</span>
+					</button>
+					<button class="quiz-modal__btn quiz-modal__closed btn quiz-modal__closed--fancybox">
+						<span>Cancel</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div><!-- end quiz-modal -->
+
+<footer class="footer">
+	<div class="wrapper">
+		<div class="footer__wrap flex">
+			<div class="footer__first">
+				<div class="footer__logo">
+					<img src="img/icons/footer-logo.svg" alt="">
+				</div>
+				<div class="footer__desc">Cryptotrends provides a fundamental analysis of the crypto market. In addition
+					to
+					tracking price, volume and market capitalisation, CoinGecko tracks community growth, open-source
+					code
+					development, major events and on-chain metrics.</div>
+			</div>
+			<div class="footer__last">
+				<div class="footer__box">
+					<div class="footer__caption">Pages:</div>
+					<nav class="footer__menu">
+						<ul>
+							<li>
+								<a href="#">Exchanges</a>
+							</li>
+							<li>
+								<a href="#">Coins</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">About</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__box">
+					<div class="footer__caption">About:</div>
+					<nav class="footer__menu">
+						<ul>
+							<li>
+								<a href="#">Terms of use</a>
+							</li>
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#">Disclaimer</a>
+							</li>
+							<li>
+								<a href="#">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__box">
+					<div class="footer__caption">Support:</div>
+					<nav class="footer__menu">
+						<ul>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Help Center</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+<script src="js/libs.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>

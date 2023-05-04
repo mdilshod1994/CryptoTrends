@@ -1,0 +1,14 @@
+.m-page {
+	padding-top: 28px;
+	padding-bottom: 80px;
+	&__top {
+		margin-top: 28px;
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__wrap {
+		width: 1016px;
+	}
+}

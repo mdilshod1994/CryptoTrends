@@ -1,0 +1,135 @@
+.quiz-modal {
+	&__box {
+		margin-bottom: 24px;
+	}
+	&__checbox {
+		display: block;
+		cursor: pointer;
+		input {
+			display: none;
+		}
+		input[type="checkbox"]:checked + .quiz-modal__checbox-box .quiz-modal__checbox-icon,
+		input[type="radio"]:checked + .quiz-modal__checbox-box .quiz-modal__checbox-icon {
+			border-color: transparent;
+			transition: all 0.3s;
+		}
+		input[type="checkbox"]:checked + .quiz-modal__checbox-box .quiz-modal__checbox-icon svg,
+		input[type="radio"]:checked + .quiz-modal__checbox-box .quiz-modal__checbox-icon svg {
+			opacity: 1;
+			transition: all 0.3s;
+		}
+		&-box {
+			display: flex;
+			align-items: flex-start;
+		}
+		&-icon {
+			width: 20px;
+			height: 20px;
+			border: 1px solid #aba7ad;
+			border-radius: 4px;
+			margin-right: 14px;
+			transition: all 0.3s;
+			svg {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				opacity: 0;
+				transition: all 0.3s;
+			}
+			&.hidden {
+				display: none;
+				opacity: 0;
+				width: 0px;
+				margin-right: 0px;
+				transition: all 0.3s;
+			}
+		}
+		&-caption {
+			flex: 1;
+		}
+	}
+	&__info {
+		display: none;
+		&-box {
+			display: flex;
+			align-items: center;
+		}
+		&-value {
+			width: 56px;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 32px;
+			color: #3b3a3c;
+			margin-right: 8px;
+		}
+		&-line {
+			flex: 1;
+			background-color: #f2f2f3;
+			border-radius: 200px;
+			height: 16px;
+			position: relative;
+			&.red {
+				span {
+					background: linear-gradient(91.12deg, #b32101 -22.49%, #d72f0b 111.64%);
+				}
+			}
+			&.yellow {
+				span {
+					background: linear-gradient(91.12deg, #eb780f -22.49%, #ffc107 111.64%);
+				}
+			}
+			&.green {
+				span {
+					background: linear-gradient(87.85deg, #028b49 3.06%, #06a85a 100%);
+				}
+			}
+			span {
+				position: absolute;
+				width: calc(100% - 4px);
+				height: calc(100% - 4px);
+				top: 2px;
+				left: 2px;
+				box-shadow: -2px 2px 8px rgba(3, 72, 39, 0.5);
+				border-radius: 200px;
+				transition: all 0.3s;
+			}
+		}
+	}
+	&__buttons {
+		display: flex;
+		gap: 16px;
+	}
+	&__btn {
+		width: 152px;
+		transition: all 0.3s;
+		&.hidden {
+			display: none;
+			opacity: 0;
+			width: 0px;
+			transition: all 0.3s;
+		}
+	}
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1340px) {
+}
+@media (max-width: 1279px) {
+}
+@media (max-width: 1189px) {
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+}
+@media (max-width: 420px) {
+	.quiz-modal {
+		&__info {
+			&-value {
+				width: 40px;
+				font-size: 18px;
+				line-height: 28px;
+			}
+		}
+	}
+}

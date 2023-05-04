@@ -1,0 +1,1871 @@
+@@include('inc/doc-start.html', {
+"title": "Cryptotrends"
+})
+
+@@include('inc/page-header.html', {
+color: 'header--light'
+})
+
+<div class="page">
+	<div class="wrapper">
+		<div class="page__top">
+			<div class="page-nav">
+				<a href="#" class="page-nav__link">Coins</a>
+				<a href="#" class="page-nav__link active">Exchanges</a>
+			</div>
+			<button class="page__filter">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="12" cy="12" r="9.25" stroke="#3B3A3C" stroke-width="1.5" />
+					<path d="M11.9941 16V12" stroke="#3B3A3C" stroke-width="1.5" stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path d="M11.9891 8.20508H11.9991" stroke="#3B3A3C" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
+		</div>
+		<div class="page__tabs">
+			<div class="tabs">
+				<a href="#" class="tab active">Crypto Exchanges </a>
+				<a href="#" class="tab">Decentralized Exchanges</a>
+				<a href="#" class="tab">Centralized Exchanges </a>
+			</div>
+		</div>
+		<div class="page__body">
+			<div class="page__wrap">
+				<div class="table">
+					<table>
+						<thead>
+							<tr>
+								<th>
+									<div class="table__sorting">
+										<div class="table__sorting-caption">Rank</div>
+										<div class="table__sorting-arrow">
+											<svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3.56876 5.09212L5.99667 7.81262C6.21964 8.06246 6.58114 8.06246 6.80411 7.81262L9.23202 5.09212C9.59169 4.6891 9.33696 4 8.8283 4H3.97248C3.46382 4 3.20909 4.6891 3.56876 5.09212Z"
+													fill="#3B3A3C" />
+											</svg>
+										</div>
+									</div>
+								</th>
+								<th>
+									<div class="table__sorting">
+										<div class="table__sorting-caption">Exchange</div>
+										<div class="table__sorting-arrow">
+											<svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3.56876 5.09212L5.99667 7.81262C6.21964 8.06246 6.58114 8.06246 6.80411 7.81262L9.23202 5.09212C9.59169 4.6891 9.33696 4 8.8283 4H3.97248C3.46382 4 3.20909 4.6891 3.56876 5.09212Z"
+													fill="#3B3A3C" />
+											</svg>
+										</div>
+									</div>
+								</th>
+								<th>
+									<div class="table__sorting">
+										<div class="table__sorting-caption">Trust Score</div>
+										<div class="table__sorting-arrow">
+											<svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3.56876 5.09212L5.99667 7.81262C6.21964 8.06246 6.58114 8.06246 6.80411 7.81262L9.23202 5.09212C9.59169 4.6891 9.33696 4 8.8283 4H3.97248C3.46382 4 3.20909 4.6891 3.56876 5.09212Z"
+													fill="#3B3A3C" />
+											</svg>
+										</div>
+									</div>
+								</th>
+								<th>
+									<div class="table__sorting">
+										<div class="table__sorting-caption">Reserves Data</div>
+										<div class="table__sorting-arrow">
+											<svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3.56876 5.09212L5.99667 7.81262C6.21964 8.06246 6.58114 8.06246 6.80411 7.81262L9.23202 5.09212C9.59169 4.6891 9.33696 4 8.8283 4H3.97248C3.46382 4 3.20909 4.6891 3.56876 5.09212Z"
+													fill="#3B3A3C" />
+											</svg>
+										</div>
+									</div>
+								</th>
+								<th>
+									<div class="table__sorting">
+										<div class="table__sorting-caption">24h Volume</div>
+										<div class="table__sorting-arrow">
+											<svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3.56876 5.09212L5.99667 7.81262C6.21964 8.06246 6.58114 8.06246 6.80411 7.81262L9.23202 5.09212C9.59169 4.6891 9.33696 4 8.8283 4H3.97248C3.46382 4 3.20909 4.6891 3.56876 5.09212Z"
+													fill="#3B3A3C" />
+											</svg>
+										</div>
+									</div>
+								</th>
+								<th>
+									<div class="table__sorting">
+										<div class="table__sorting-caption">24h Volume %</div>
+										<div class="table__sorting-arrow">
+											<svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3.56876 5.09212L5.99667 7.81262C6.21964 8.06246 6.58114 8.06246 6.80411 7.81262L9.23202 5.09212C9.59169 4.6891 9.33696 4 8.8283 4H3.97248C3.46382 4 3.20909 4.6891 3.56876 5.09212Z"
+													fill="#3B3A3C" />
+											</svg>
+										</div>
+									</div>
+								</th>
+								<th>
+									<div class="table__sorting">
+										<div class="table__sorting-caption">Monthly Visits</div>
+										<div class="table__sorting-arrow">
+											<svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3.56876 5.09212L5.99667 7.81262C6.21964 8.06246 6.58114 8.06246 6.80411 7.81262L9.23202 5.09212C9.59169 4.6891 9.33696 4 8.8283 4H3.97248C3.46382 4 3.20909 4.6891 3.56876 5.09212Z"
+													fill="#3B3A3C" />
+											</svg>
+										</div>
+									</div>
+								</th>
+								<th>
+									<div class="table__sorting">
+										<div class="table__sorting-caption">Last 7 Days</div>
+										<div class="table__sorting-arrow">
+											<svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3.56876 5.09212L5.99667 7.81262C6.21964 8.06246 6.58114 8.06246 6.80411 7.81262L9.23202 5.09212C9.59169 4.6891 9.33696 4 8.8283 4H3.97248C3.46382 4 3.20909 4.6891 3.56876 5.09212Z"
+													fill="#3B3A3C" />
+											</svg>
+										</div>
+									</div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">-</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="table__rang">
+										<div class="table__rang-star">
+											<img src="img/page/star.svg" alt="">
+										</div>
+										<div class="table__rang-value">#1</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__crypto">
+										<div class="table__crypto-logo">
+											<img src="img/page/logo-binance.svg" alt="">
+										</div>
+										<div class="table__crypto-value">Binance</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__stat">
+										<div class="table__stat-line">
+											<span style="width: 60%;"></span>
+										</div>
+										<div class="table__stat-value">6</div>
+									</div>
+								</td>
+								<td>
+									<div class="table__reservers-info">Unavailable</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__price">$159,335</div>
+								</td>
+								<td>
+									<div class="table__monthly-visits">62.1 K</div>
+								</td>
+								<td>
+									<div class="table__schedule">
+										<img src="img/page/schedule.svg" alt="">
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="page__buttons">
+					<button class="page__btn btn btn_white">
+						<span>Показать все</span>
+					</button>
+				</div>
+			</div>
+			<aside class="page__aside aside">
+				<div class="aside__wrap">
+					<div class="aside__closed">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7 7L17 17" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+							<path d="M17 7L7 17" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+						</svg>
+					</div>
+					<div class="aside__box">
+						<div class="aside__top aside__top_item">
+							<div class="aside__top-caption">New Coins</div>
+							<div class="aside__top-icon">
+								<img src="img/aside/fire.svg" alt="">
+							</div>
+						</div>
+						<div class="aside__items">
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-1.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-2.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-3.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-4.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-5.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside__box">
+						<div class="aside__top">
+							<div class="aside__top-caption">Discussing now</div>
+							<div class="aside__top-icon">
+								<img src="img/aside/fire.svg" alt="">
+							</div>
+						</div>
+						<div class="aside__items">
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-1.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-2.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-3.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-4.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-5.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-1.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-2.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-3.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-4.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-5.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-1.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-2.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-3.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-4.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-5.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside__box">
+						<div class="aside__top">
+							<div class="aside__top-caption">Discussing now</div>
+							<div class="aside__top-icon">
+								<img src="img/aside/fire.svg" alt="">
+							</div>
+						</div>
+						<div class="aside__items">
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-1.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-2.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-3.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-4.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-5.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-1.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-2.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-3.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-4.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+							<div class="aside__item">
+								<div class="aside__item-company">
+									<div class="aside__item-logo">
+										<img src="img/aside/logo-5.svg" alt="">
+									</div>
+									<div class="aside__item-name">Ethernum</div>
+								</div>
+								<div class="aside__item-price">$0.02342914</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside__promo">
+						<div class="aside__promo-row">
+							<div class="aside__promo-coll">
+								<div class="aside__promo-bg">
+									<img src="img/aside/promo-bg-small.svg" alt="">
+								</div>
+								<div class="aside__promo-caption">Banner</div>
+								<a href="#" class="aside__promo-btn btn btn_item">
+									<span>Text</span>
+								</a>
+							</div>
+							<div class="aside__promo-coll">
+								<div class="aside__promo-bg">
+									<img src="img/aside/promo-bg-small.svg" alt="">
+								</div>
+								<div class="aside__promo-caption">Banner</div>
+								<a href="#" class="aside__promo-btn btn btn_item">
+									<span>Text</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+</div>
+
+@@include('inc/modal.html')
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')
